@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+
+    element.style{
+      background-size: 1050px 320px;
+    }
+    
+    .container{
+      font-family: 'Courier New', Courier, monospace;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      
+    }
+
+    .header{
+      background-color: #3B5998;
+    }
+
+    .fruits{
+     display: block;
+     margin-top: 2em;
+     margin-bottom: 2em;
+    }
+
+    .veggies{
+      display: block;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    
+    .products .card{
+      margin-right: 2%;
+      border-style: groove;
+      text-align: center;
+    }
+
+    .health{
+      background-origin: padding-box;
+      border-style: none;
+      text-align: center;
+    }
+    
+    tbody{
+      margin-left: 30px;
+    }
+    .health img{
+      padding: 10px;
+    }
+    
+    .health .card{
+      border-style: ridge;
+    }
+
+    .card-img-top{
+      align-self: center;
+      padding: 20px;
+    }
+    .health .card-title{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .card-text{
+      text-align: center;
+    }
+    
+    h2{
+      background: white;
+      display: table;
+      margin: 6px auto 0;
+      padding: 0 30px;
+      text-transform: uppercase;
+      font-family: "Brush Script MT", cursive;
+    }
+    
+    .fa {
+      padding: 5px;
+      font-size: 30px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin: 1px 2px;
+    }
+    
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+    
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-pinterest {
+      background: #cb2027;
+      color: white;
+    }
+
+    .btn {
+      background-color: green; /* Blue background */
+      border: none; /* Remove borders */
+      color: black; /* White text */
+      padding: 12px 16px; /* Some padding */
+      font-size: 16px; /* Set a font size */
+      cursor: pointer; /* Mouse pointer on hover */
+    }
+
+    .btn:hover {
+      background-color: white;
+    }
+
+    .fruits img{
+      border-bottom-left-radius: 25%;
+      border-bottom-right-radius: 25%;
+      width: 200px;
+      height: 150px;
+    }
+
+    table{
+      text-align: center;
+    }
+    .fruits-table{
+      border-collapse: separate;
+      border-spacing: 0 25px;
+    }
+    .veggies-table{
+      border-collapse: separate;
+      border-spacing: 0 25px;
+    }
+
+    td{
+      padding: 0 15px;
+    }
+    
+    
+</style>
+<body>
+
+<header>
+    <div class="social-meadia"></div>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <span>&#9742;</span>
+    <span class="phone-no">
+      +91-5555666622
+     </span>
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+    </svg>
+    <span class="mail"><a href="mailto:info@brillio.com">info@brillio.com</a>
+        
+    </div>
+</header>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><strong>Royal</strong> Fruits And Vegetables</a>
+      <form class="navbar-form navbar-left" action="/action_page.php">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" style="width: 700px;">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</button>
+      </form>
+    </div>
+     
+
+    <ul class="nav navbar-nav">
+      <li><a href="#"> SHOP BY CATEGORIES </a></li>
+      <li class="active"><a href="#">HOME</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">CATEGORIES
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">FRUITS</a></li>
+          <li><a href="#">VEGGIES</a></li>
+        </ul>
+      </li>
+      <li><a href="#">PRODUCTS</a></li>
+      <li><a href="#">HEALTH</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#">GALLERY</a></li>
+      <li><a href="#">VIDEOS</a></li>
+      <li><a href="#">GALLERY</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page-1</a></li>
+          <li><a href="#">Page-2</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+  </div>
+</nav>
+
+<div class="container-fluid">
+    
+    <div class="top-bar">
+    <img src="images/head_image.jpg" alt="Vegetables for health and nutrition" height="500px" width="100%">
+    </div>
+
+   
+    <div class="fruits">
+      <article class="container">
+        <h2>Fruits</h2>
+        <table class="fruits-table">
+            <tr>
+                <td><img src="images/fruits/apples.PNG" alt="Apples" width="80%"></td>
+                <td><img src="images/fruits/bananas.PNG" alt="Bananas" width="80%"></td>
+                <td><img src="images/fruits/grapes.PNG" alt="Grapes" width="80%"></td>
+                <td><img src="images/fruits/pineapples.PNG" alt="Pineapples" width="80%"></td>
+            </tr>
+            <tr>
+                <td><img src="images/fruits/Mangoes.PNG" alt="Mangoes" width="80%"></td>
+                <td><img src="images/fruits/oranges.PNG" alt="Oranges" width="80%"></td>
+                <td><img src="images/fruits/pomegranates.PNG" alt="Pomegranates" width="80%"></td>
+                <td><img src="images/fruits/guavas.PNG" alt="Guavas" width="80%"></td>
+            </tr>
+        <table>
+        </article>
+    </div>
+  
+
+    
+    <div class="veggies">
+      <article class="container">
+        <h2>Veggies</h2>
+        <table class="veggies-table">
+            <tr>
+                <td><img src="images/veggies/cabbage.PNG" alt="Cabbage" width="80%"></td>
+                <td><img src="images/veggies/cauliflower.PNG" alt="Cauliflower" width="80%"></td>
+                <td><img src="images/veggies/brinjal.PNG" alt="Brinjal" width="80%"></td>
+                <td><img src="images/veggies/carrot.PNG" alt="Carrot" width="80%"></td>
+            </tr>
+            <tr>
+                <td><img src="images/veggies/ladies finger.PNG" alt="Ladies Finger" width="80%"></td>
+                <td><img src="images/veggies/pumpkin.PNG" alt="pumpkin" width="80%"></td>
+                <td><img src="images/veggies/capsicum.PNG" alt="Capsicum" width="80%"></td>
+                <td><img src="images/veggies/peas.PNG" alt="Peas" width="80%"></td>
+            </tr>
+        <table>
+        </article>
+    </div>
+
+    <div class="products">
+      <article class="container">
+        <h2>Products</h2>
+        <table class="products-table">
+        <tr>
+            <td><div class="card" style="width:400px">
+                <img class="card-img-top" src="images/veggies/cabbage.png" alt="Cabbage" style="width:40%">
+                <div class="card-body">
+                  <h4 class="card-title">Fresh Cabbagge</h4>
+                  <p class="card-text"><span>&#8377;</span>22/gram</p>
+                  <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span>Add</a>
+                </div>
+            </div></td>
+            <td><div class="card" style="width:400px">
+                <img class="card-img-top" src="images/veggies/brinjal.PNG" alt="Brinjal" style="width:40%">
+                <div class="card-body">
+                  <h4 class="card-title">Fresh Brinjal</h4>
+                  <p class="card-text"><span>&#8377;</span>20/gram</p>
+                  <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span>Add</a>
+                </div>
+            </div></td>
+            <td><div class="card" style="width:400px">
+                <img class="card-img-top" src="images/fruits/grapes.PNG" alt="Grapes" style="width:40%">
+                <div class="card-body">
+                  <h4 class="card-title">Fresh Grapes</h4>
+                  <p class="card-text"><span>&#8377;</span>220/gram</p>
+                  <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span>Add</a>
+                </div>
+            </div></td>
+            <td><div class="card" style="width:400px">
+                <img class="card-img-top" src="images/veggies/cauliflower.PNG" alt="Cauliflower" style="width:40%">
+                <div class="card-body">
+                  <h4 class="card-title">Fresh Cauliflower</h4>
+                  <p class="card-text"><span>&#8377;</span>30/gram</p>
+                  <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span>Add</a>
+                </div>
+            </div></td>
+            <td><div class="card" style="width:400px">
+                <img class="card-img-top" src="images/veggies/peas.png" alt="Peas" style="width:40%">
+                <div class="card-body">
+                  <h4 class="card-title">Fresh Peas</h4>
+                  <p class="card-text"><span>&#8377;</span>40/gram</p>
+                  <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span>Add</a>
+                </div>
+            </div></td>
+            <td><div class="card" style="width:400px">
+                <img class="card-img-top" src="images/fruits/pomegranates.PNG" alt="Pomegranates" style="width:40%">
+                <div class="card-body">
+                  <h4 class="card-title">Fresh Pomegranates</h4>
+                  <p class="card-text"><span>&#8377;</span>200/gram</p>
+                  <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span>Add</a>
+                </div>
+            </div></td>
+        </tr>
+        </table>
+      </article>
+    </div>
+
+    <div class="health">
+      <article class="container">
+        <h2>How are thety Helpful?</h2>
+        <table>
+            <tr>
+                <td><div class="card" style="width:300px">
+                    <img class="card-img-top" src="images/vitamins.PNG" alt="Vitamins" style="width:40%" style="text-align: center">
+                    <div class="card-body">
+                      <h4 class="card-title">Loaded with Vitamins & Minerals</h4>
+                      <p class="card-text">Fruits & vegetables contain vitamin A(beta-carotene), C and E, magnesium
+                          and phosphorus and fabric acid.
+                      </p>
+                      
+                    </div>
+                </div></td>
+                <td><div class="card" style="width:300px">
+                    <img class="card-img-top" src="images/protect.PNG" alt="Protect Against Disease" style="width:40%" style="text-align: center">
+                    <div class="card-body">
+                      <h4 class="card-title">Protect Against Diseases</h4>
+                      <p class="card-text">Consuming these items daily help prevent type 2
+                          diabetes, heart strokes, cancer as well as high blood pressure.
+                      </p>
+                     
+                    </div>
+                </div></td>
+                <td><div class="card" style="width:300px">
+                    <img class="card-img-top" src="images/health.PNG" alt="Good HEalth" style="width:40%" style="text-align: center">
+                    <div class="card-body">
+                      <h4 class="card-title">Promote Good Health</h4>
+                      <p class="card-text">Having fruits & veggies helps build a balanced diet reduces obesity. 
+                          Cholesterol and lowers blood pressure.
+                      </p>
+                    </div>
+                </div></td>
+            </tr>
+        </table>
+      </article>
+    </div>
+
+    <div class="about-us">
+        <article class="container">
+        <h2>About Us</h2>
+        <div class="card" style="width:80%">
+            <img class="card-img-top" src="images/image5.PNG" alt="Fruits and Vegetables" style="width:100%; height: 400px;" style="text-align: center">
+            <div class="card-body">
+                <p class="card-text">
+                    It is a proven fact that eating fruitsand vegetables on a daily basis
+                    is highly beneficial to one and all. Both fruits and vegetables are high in nutritional 
+                    value and fiber. Consuming these on a daily basis also helps the body stay light, fit
+                    and healthy and plays a major role in boosting the immune system. So, we help you cleanse 
+                    the body and get rid of harmful toxinsby providing farm fresh fruits and vegetables. we 
+                    have been in the industry since years now and hold a strong base in Malad West, Mumbai, Maharastra.
+                    The quality of fruits and vegetables you consume s as important to us as is it to you, 
+                    which i why we have earned the trust of many and are leaving the market. We make sure you eat healthy and stay happy.
+                </p>
+            </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="gallery">
+      <article class="container">
+        <h2>Gallery</h2>
+        <table>
+            <tr>
+                <td><img src="images/image1.PNG" alt="Image1"></td>
+                <td><img src="images/image2.PNG" alt="Image2"></td>
+                <td><img src="images/image3.PNG" alt="Image3"></td>
+            </tr>
+        </table>
+      </article>
+    </div>
+
+  <!-- contact -->
+<div id="contact" class="contact">
+  <div class="container">
+   <div class="row">
+     <div class="col-md-12">
+                <div class="titlepage">
+                  <h2>Contact <strong class="llow">us</strong></h2>
+                </div>
+   </div>
+
+</div>
+    <article class="container">
+      <div class="row">
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+           <form class="contact_bg">
+            <div class="row">
+              <div class="col-md-12">
+              
+                <div class="col-md-12">
+                  <input class="contactus" placeholder="Your Name" type="text" name="Your Name">
+                </div>
+                <div class="col-md-12">
+                  <input class="contactus" placeholder="Email" type="text" name="Email">
+                </div>
+                <div class="col-md-12">
+                  <input class="contactus" placeholder="Phone Number" type="text" name="Phone Number">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <button class="send">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+            </div>
+      
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div id="map">
+          </div>
+           </div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+</div>
+</div>
+
+</div>
+
+<footer>
+  <p>Copyright © 2019</p>
+</footer>
+  
+
+
+</body>
+</html>
